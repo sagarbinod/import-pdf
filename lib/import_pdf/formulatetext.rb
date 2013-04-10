@@ -1,4 +1,4 @@
-module FormulateText
+class FormulateText < ImportPdf
 
   def initialize(*args)
     ARGV.empty? ? data = STDIN.read : data = loadFile(*args)
