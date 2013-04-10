@@ -3,6 +3,7 @@ test.*
 *.rbc
 .bundle
 .config
+.rvmrc
 .yardoc
 Gemfile.lock
 InstalledFiles
