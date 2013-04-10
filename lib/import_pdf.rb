@@ -2,8 +2,11 @@
 require "import_pdf/version"
 require "import_pdf/formulatetext"
 
-class ImportPdf
-  def new(*args)
+module ImportPdf
+  extend self
+
+  def formulateText(*args)
     FormulateText.new(*args)
   end
+
 end

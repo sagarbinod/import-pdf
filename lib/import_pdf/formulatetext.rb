@@ -1,4 +1,4 @@
-class FormulateText < ImportPdf
+class FormulateText
 
   def initialize(*args)
     ARGV.empty? ? data = STDIN.read : data = loadFile(*args)
@@ -14,7 +14,6 @@ class FormulateText < ImportPdf
     @file = ARGV[-1]
     source_file = File::read(@file) if File::exists?(@file) && File::readable?(@file)
   end
-
 
   def reformulateBullets( array_of_lines )
     bullets = [ "\u2022" ]

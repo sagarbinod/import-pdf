@@ -4,4 +4,4 @@
 #  md2legal file.md
 
 require 'import_pdf'
-ImportPdf.new(ARGV)
+ImportPdf.formulateText(ARGV)
