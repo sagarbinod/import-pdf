@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+#
+# == USAGE
+#  md2legal file.md
+
+require 'import_pdf'
+ImportPdf.formulate(ARGV)
